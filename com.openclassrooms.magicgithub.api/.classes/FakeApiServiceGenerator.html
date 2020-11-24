@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: FakeApiServiceGenerator</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.openclassrooms.magicgithub.api</a> ]
+</div>
+
+<h1>Coverage Summary for Class: FakeApiServiceGenerator (com.openclassrooms.magicgithub.api)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">FakeApiServiceGenerator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66,7%
+  </span>
+  <span class="absValue">
+    (2/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/ 4)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.openclassrooms.magicgithub.api;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.openclassrooms.magicgithub.model.User;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;import java.util.ArrayList;
+<i>6</i>&nbsp;import java.util.Arrays;
+<i>7</i>&nbsp;import java.util.List;
+<i>8</i>&nbsp;import java.util.UUID;
+<i>9</i>&nbsp;
+<b class="nc"><i>10</i>&nbsp;public abstract class FakeApiServiceGenerator {</b>
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;
+<i>13</i>&nbsp;    static List&lt;User&gt; generateUsers() {
+<b class="fc"><i>14</i>&nbsp;        return new ArrayList&lt;&gt;(FAKE_USERS);</b>
+<i>15</i>&nbsp;    }
+<i>16</i>&nbsp;
+<b class="fc"><i>17</i>&nbsp;    public static List&lt;User&gt; FAKE_USERS = Arrays.asList(</b>
+<i>18</i>&nbsp;            new User(&quot;001&quot;, &quot;Jake&quot;, &quot;https://api.adorable.io/AVATARS/512/1.png&quot;),
+<i>19</i>&nbsp;            new User(&quot;002&quot;, &quot;Paul&quot;, &quot;https://api.adorable.io/AVATARS/512/2.png&quot;),
+<i>20</i>&nbsp;            new User(&quot;003&quot;, &quot;Phil&quot;, &quot;https://api.adorable.io/AVATARS/512/3.png&quot;),
+<i>21</i>&nbsp;            new User(&quot;004&quot;, &quot;Guillaume&quot;, &quot;https://api.adorable.io/AVATARS/512/4.png&quot;),
+<i>22</i>&nbsp;            new User(&quot;005&quot;, &quot;Francis&quot;, &quot;https://api.adorable.io/AVATARS/512/5.png&quot;),
+<i>23</i>&nbsp;            new User(&quot;006&quot;, &quot;George&quot;, &quot;https://api.adorable.io/AVATARS/512/6.png&quot;),
+<i>24</i>&nbsp;            new User(&quot;007&quot;, &quot;Louis&quot;, &quot;https://api.adorable.io/AVATARS/512/7.png&quot;),
+<i>25</i>&nbsp;            new User(&quot;008&quot;, &quot;Mateo&quot;, &quot;https://api.adorable.io/AVATARS/512/8.png&quot;),
+<i>26</i>&nbsp;            new User(&quot;009&quot;, &quot;April&quot;, &quot;https://api.adorable.io/AVATARS/512/9.png&quot;),
+<i>27</i>&nbsp;            new User(&quot;010&quot;, &quot;Louise&quot;, &quot;https://api.adorable.io/AVATARS/512/10.png&quot;),
+<i>28</i>&nbsp;            new User(&quot;011&quot;, &quot;Elodie&quot;, &quot;https://api.adorable.io/AVATARS/512/11.png&quot;),
+<i>29</i>&nbsp;            new User(&quot;012&quot;, &quot;Helene&quot;, &quot;https://api.adorable.io/AVATARS/512/12.png&quot;),
+<i>30</i>&nbsp;            new User(&quot;013&quot;, &quot;Fanny&quot;, &quot;https://api.adorable.io/AVATARS/512/13.png&quot;),
+<i>31</i>&nbsp;            new User(&quot;014&quot;, &quot;Laura&quot;, &quot;https://api.adorable.io/AVATARS/512/14.png&quot;),
+<i>32</i>&nbsp;            new User(&quot;015&quot;, &quot;Gertrude&quot;, &quot;https://api.adorable.io/AVATARS/512/15.png&quot;),
+<i>33</i>&nbsp;            new User(&quot;016&quot;, &quot;Chloé&quot;, &quot;https://api.adorable.io/AVATARS/512/16.png&quot;),
+<i>34</i>&nbsp;            new User(&quot;017&quot;, &quot;April&quot;, &quot;https://api.adorable.io/AVATARS/512/17.png&quot;),
+<i>35</i>&nbsp;            new User(&quot;018&quot;, &quot;Marie&quot;, &quot;https://api.adorable.io/AVATARS/512/18.png&quot;),
+<i>36</i>&nbsp;            new User(&quot;019&quot;, &quot;Henri&quot;, &quot;https://api.adorable.io/AVATARS/512/19.png&quot;),
+<i>37</i>&nbsp;            new User(&quot;020&quot;, &quot;Rémi&quot;, &quot;https://api.adorable.io/AVATARS/512/20.png&quot;)
+<i>38</i>&nbsp;    );
+<i>39</i>&nbsp;
+<b class="fc"><i>40</i>&nbsp;    public static List&lt;User&gt; FAKE_USERS_RANDOM = Arrays.asList(</b>
+<i>41</i>&nbsp;            new User(&quot;021&quot;, &quot;Lea&quot;, &quot;https://api.adorable.io/AVATARS/512/21.png&quot;),
+<i>42</i>&nbsp;            new User(&quot;022&quot;, &quot;Geoffrey&quot;, &quot;https://api.adorable.io/AVATARS/512/22.png&quot;),
+<i>43</i>&nbsp;            new User(&quot;023&quot;, &quot;Simon&quot;, &quot;https://api.adorable.io/AVATARS/512/23.png&quot;),
+<i>44</i>&nbsp;            new User(&quot;024&quot;, &quot;André&quot;, &quot;https://api.adorable.io/AVATARS/512/24.png&quot;),
+<i>45</i>&nbsp;            new User(&quot;025&quot;, &quot;Leopold&quot;, &quot;https://api.adorable.io/AVATARS/512/25.png&quot;)
+<i>46</i>&nbsp;    );
+<i>47</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-11-02 09:18</div>
+</div>
+</body>
+</html>

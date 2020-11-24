@@ -1,0 +1,121 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ListUserViewHolder</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.openclassrooms.magicgithub.ui.user_list</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ListUserViewHolder (com.openclassrooms.magicgithub.ui.user_list)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ListUserViewHolder</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.openclassrooms.magicgithub.ui.user_list;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import android.view.View;
+<i>4</i>&nbsp;import android.widget.ImageButton;
+<i>5</i>&nbsp;import android.widget.ImageView;
+<i>6</i>&nbsp;import android.widget.TextView;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import com.bumptech.glide.Glide;
+<i>9</i>&nbsp;import com.bumptech.glide.request.RequestOptions;
+<i>10</i>&nbsp;import com.openclassrooms.magicgithub.R;
+<i>11</i>&nbsp;import com.openclassrooms.magicgithub.model.User;
+<i>12</i>&nbsp;
+<i>13</i>&nbsp;import androidx.annotation.NonNull;
+<i>14</i>&nbsp;import androidx.recyclerview.widget.RecyclerView;
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;public class ListUserViewHolder extends RecyclerView.ViewHolder {
+<i>17</i>&nbsp;
+<i>18</i>&nbsp;    // FOR DESIGN ---
+<i>19</i>&nbsp;    private ImageView avatar;
+<i>20</i>&nbsp;    private TextView username;
+<i>21</i>&nbsp;    private ImageButton deleteButton;
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;    public ListUserViewHolder(@NonNull View itemView) {
+<b class="nc"><i>24</i>&nbsp;        super(itemView);</b>
+<b class="nc"><i>25</i>&nbsp;        avatar = itemView.findViewById(R.id.item_list_user_avatar);</b>
+<b class="nc"><i>26</i>&nbsp;        username = itemView.findViewById(R.id.item_list_user_username);</b>
+<b class="nc"><i>27</i>&nbsp;        deleteButton = itemView.findViewById(R.id.item_list_user_delete_button);</b>
+<i>28</i>&nbsp;    }
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;    public void bind(User user, UserListAdapter.Listener callback) {
+<b class="nc"><i>31</i>&nbsp;        Glide.with(itemView.getContext())</b>
+<b class="nc"><i>32</i>&nbsp;                .load(user.getAvatarUrl())</b>
+<b class="nc"><i>33</i>&nbsp;                .apply(RequestOptions.circleCropTransform())</b>
+<b class="nc"><i>34</i>&nbsp;                .into(avatar);</b>
+<b class="nc"><i>35</i>&nbsp;        username.setText(user.getLogin());</b>
+<b class="nc"><i>36</i>&nbsp;        deleteButton.setOnClickListener(view -&gt; callback.onClickDelete(user));</b>
+<i>37</i>&nbsp;    }
+<i>38</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-11-02 09:18</div>
+</div>
+</body>
+</html>
